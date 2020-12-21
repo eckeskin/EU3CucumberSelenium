@@ -32,6 +32,7 @@ public class ContactsStepDefs {
         Assert.assertEquals(menuOptions,actualOptions);
         System.out.println("menuOptions = " + menuOptions);
         System.out.println("actualOptions = " + actualOptions);
+
     }
 
     @When("the user logs in using following credentials")

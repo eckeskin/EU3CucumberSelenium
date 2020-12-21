@@ -104,6 +104,7 @@ public class BrowserUtils {
     public static WebElement waitForVisibility(By locator, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.get(), timeout);
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
     }
 
     /**

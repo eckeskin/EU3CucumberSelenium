@@ -3,10 +3,12 @@ package com.vytrack.step_definitions;
 import com.vytrack.pages.ContactsPage;
 import com.vytrack.pages.DashboardPage;
 import com.vytrack.utilities.BrowserUtils;
+import com.vytrack.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 public class NavigationMenuStepDefs {
 
     @When("the user navigates to Fleet, Vehicles")
@@ -56,8 +58,8 @@ public class NavigationMenuStepDefs {
         BrowserUtils.waitFor(20);
         ContactsPage contactsPage = new ContactsPage();
         Integer actualNumber =Integer.parseInt(contactsPage.pageNumber.getAttribute("value"));
-
         Assert.assertEquals(expectedPageNum,actualNumber);
+
     }
 
 }
