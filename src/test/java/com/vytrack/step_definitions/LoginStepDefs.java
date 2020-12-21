@@ -31,7 +31,7 @@ public class LoginStepDefs {
     public void the_user_should_be_able_to_login() throws InterruptedException {
         //BrowserUtils.waitFor(3);
         String actualTitle = Driver.get().getTitle();
-        Assert.assertEquals("Dashboard",actualTitle);
+        Assert.assertEquals("Dashboards",actualTitle);
 
     }
 
